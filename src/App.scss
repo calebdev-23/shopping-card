@@ -1,0 +1,55 @@
+.header{
+
+  nav{
+    li{
+      font-weight: bold;
+    }
+    .active{
+      border-radius: 5px;
+      background-color: #87afd2;
+    }
+    .navbar-toggler{
+      border: none;
+      &:focus{
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .logo{
+      width: 150px;
+    }
+  }
+}
+footer{
+  .row{
+    color: rgba(255, 255, 255, 0.88);
+    li{
+      margin-top: 10px;
+      i{
+        margin-right: 5px;
+        color: rgb(255, 255, 255);
+      }
+    }
+    span{
+      padding-bottom: 3px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.61);
+    }
+    .logo{
+      width: 200px;
+    }
+  }
+  .bottom{
+    color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(0, 0, 0, 0.93);
+  }
+
+}
+.main{
+  min-height: 90vh;
+}
+.myCard{
+  .row{
+    border : 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+  }
+}
