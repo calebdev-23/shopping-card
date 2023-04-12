@@ -11,6 +11,7 @@ import image8 from "../assets/shops/shops-8.png"
 import image9 from "../assets/shops/shops-9.png"
 import image10 from "../assets/shops/shops-10.png"
 import {UseTitle} from "../hooks/UseTitle";
+import {useCard} from "../context/UseContext";
 export const Home = () =>{
     UseTitle("Home")
     const products = [

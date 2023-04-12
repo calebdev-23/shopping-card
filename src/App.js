@@ -7,9 +7,9 @@ function App() {
   return (
     <>
         <Header/>
-        <div className={"container main"}>
-            <AllRoutes/>
-        </div>
+            <div className={"container main"}>
+                <AllRoutes/>
+            </div>
         <Footer/>
     </>
   );

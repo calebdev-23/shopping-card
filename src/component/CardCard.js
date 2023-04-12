@@ -1,5 +1,8 @@
+import {useCard} from "../context/UseContext";
+
 export const CardCard = ({product}) =>{
     const {description, image, name, price} = product
+    const {removeToCard} = useCard()
     return(
         <div className={"row align-items-center shadow mb-3"}>
             <div className="col-12 col-sm-12 col-md-3 col-lg-3 ">
@@ -14,7 +17,7 @@ export const CardCard = ({product}) =>{
                 <p className={"mb-0 fw-bold fs-5 text-primary"}>${price}</p>
             </div>
             <div className="col-12 col-sm-12 col-md-3 col-lg-3 text-lg-end  text-center text-sm-center">
-                <button className={"btn btn-danger btn-sm mb-2 mb-sm-2 mb-lg-0"}>Remove</button>
+                <button className={"btn btn-danger btn-sm mb-2 mb-sm-2 mb-lg-0"} onClick={()=>removeToCard(product)}>Remove</button>
             </div>
         </div>
     )
