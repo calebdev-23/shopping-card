@@ -1,7 +1,9 @@
 import {Link, NavLink} from "react-router-dom";
 import logo from "../assets/logo2.png"
 import Pc from "../assets/media/pc1.jpg"
+import {useCard} from "../context/ContextCard";
 export const Header = () =>{
+    const {cardList} = useCard()
     return(
         <section className={"header container"}>
             <nav className="navbar navbar-expand-lg mb-4 py-2 ">
@@ -42,7 +44,7 @@ export const Header = () =>{
                             }
                         </ul>
                         <div>
-                            <span>Card : 2</span>
+                            <span>Card : {cardList.length}</span>
                         </div>
 
                     </div>

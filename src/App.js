@@ -4,6 +4,7 @@ import {Header, Footer} from "./component"
 import {AllRoutes} from "./Route/AllRoutes";
 
 function App() {
+
   return (
     <>
         <Header/>
